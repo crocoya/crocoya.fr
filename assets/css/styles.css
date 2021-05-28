@@ -488,6 +488,40 @@ img {
   display: block;
   padding-left: 1rem;
 }
+/* ===== FLEMME JE CORRIGE ICI ===== */
+.about__information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.about__information-title  {
+  margin-bottom: 2rem;
+  align-self: center;
+}
+
+.education__line {
+  height: 55%;
+}
+
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__bloc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contact__info {
+  display: flex;
+}
 /* ===== FOOTER =====*/
 .footer {
   background-color: var(--first-color-darken);
@@ -533,6 +567,41 @@ img {
   color: var(--first-color);
 }
 /* ===== MEDIA QUERIES =====*/
+@media screen and (min-width: 425px) {
+  .about__information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .about__information-title  {
+    margin-bottom: 2rem;
+    align-self: center;
+  }
+
+  .education__line {
+    height: 55%;
+  }
+
+  .contact__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact__bloc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact__info {
+    display: flex;
+  }
+}
 @media screen and (min-width: 768px) {
   .home__button {
     width: initial;
@@ -556,6 +625,7 @@ img {
 
   .about__description {
     margin-bottom: var(--mb-5);
+    margin-left: 3.8rem;
   }
 
   .about__img {
@@ -564,10 +634,44 @@ img {
 
   .about__information {
     padding-left: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .skills__content {
+    font-size: 3rem;
+  }
+
+  .education__year,
+  .education__race {
+    font-size: 0.7rem;
+  }
+
+  .education__university,
+  .education__speciality {
+    font-size: 0.65rem;
   }
 
   .education__time {
     padding: 0 2rem;
+  }
+
+  .education__line {
+    height: 55%;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact__bloc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
   }
 
   .contact__inputs {
@@ -576,6 +680,7 @@ img {
   }
 
   .contact__info {
+    display: flex;
     padding-left: 3rem;
   }
 
@@ -626,9 +731,13 @@ img {
   .works__container {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .about__description {
+    margin-left: 1.8rem;
+  }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1440px) and (max-width: 1980px) {
   .home__img {
     width: 300px;
     height: 300px;
@@ -658,7 +767,7 @@ img {
     padding: 8rem 0 2rem;
   }
   .section-title {
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
   }
 
   .exp-title {
@@ -666,7 +775,12 @@ img {
   }
 
   .section-subtitle {
-    font-size: 2rem;
+    font-size: 1rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .about {
+    padding-top: 80px;
   }
 
   .about__description {
@@ -679,22 +793,66 @@ img {
   }
 
   .skills__container {
-    margin-left: 8rem;
+    margin-left: 5rem;
   }
 
   .skills__content {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 
   .colored {
     padding-right: 3rem;
   }
 
+  .education {
+    padding-top: 20px;
+  }
+
   .education__line {
     height: 55%;
+  }
+
+  .education__year,
+  .education__race {
+    font-size: 0.99rem;
+  }
+
+  .education__university,
+  .education__speciality {
+    font-size: 0.75rem;
   }
 
   .works__img img {
     height: 12rem;
   }
+
+  .portfolio {
+    padding-top: 80px;
+  }
+
+  #contact {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact__bloc {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 0rem;
+  }
+
+  .contact__info {
+    display: flex;
+  }
+
+  .footer {
+    padding-top: 0rem;
+  }
+}
+.contact__form {
+  display: none;
 }
