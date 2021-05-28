@@ -496,8 +496,8 @@ img {
   align-items: flex-start;
 }
 
-.about__information-title  {
-  margin-bottom: 2rem;
+.about__information-title {
+  margin-bottom: 20px;
   align-self: center;
 }
 
@@ -787,9 +787,9 @@ img {
     text-align: center;
   }
 
-  .about__information-title  {
-    text-align: center;
+  .about__information-title {
     margin-bottom: 20px;
+    align-self: center;
   }
 
   .skills__container {
